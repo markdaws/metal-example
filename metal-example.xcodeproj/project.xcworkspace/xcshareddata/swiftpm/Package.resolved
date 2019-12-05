@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Toy3D",
+        "repositoryURL": "https://github.com/markdaws/Toy3D.git",
+        "state": {
+          "branch": null,
+          "revision": "affd8e686d9edf05f991688dc92df3d1ae6d2f60",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
