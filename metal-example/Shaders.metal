@@ -19,6 +19,10 @@ struct VertexOut {
 };
 
 struct Uniforms {
+  float time;
+  int2 resolution;
+  float4x4 view;
+  float4x4 inverseView;
   float4x4 viewProjection;
 };
 

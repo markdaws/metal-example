@@ -13,6 +13,7 @@ final class GameViewController: UIViewController {
     case bunny
   }
 
+  @IBOutlet private weak var fpsLabel: UILabel!
   private var currentDemoType = Demo.singleCube
   private var renderer: Renderer!
   private var mtkView: MTKView!
@@ -32,11 +33,19 @@ final class GameViewController: UIViewController {
     }
     self.renderer = renderer
 
+    let scale = UIScreen.main.scale
+
+    self.renderer.onFrame = { [unowned renderer] in
+      let size = mtkView.bounds.size
+      self.fpsLabel.text = "[\(size.width * scale) x \(size.height * scale)], FPS: \(String(format: "%.0f", renderer.fpsCounter.currentFPS))"
+    }
+
     mtkView.delegate = renderer
     renderer.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
 
     // Tap to change the demos
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onTap))
+    tapGesture.numberOfTapsRequired = 1
     mtkView.addGestureRecognizer(tapGesture)
 
     // Class containing several different demo scenes
@@ -46,6 +55,7 @@ final class GameViewController: UIViewController {
 
   @objc func onTap(_ recognizer: UITapGestureRecognizer) {
     switch currentDemoType {
+
     case .singleCube:
       examples.createSceneSingleCube(textured: true)
       currentDemoType = .singleCubeTextured

@@ -13,9 +13,9 @@
 		4D329638239881C300FC0DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D329636239881C300FC0DC0 /* Main.storyboard */; };
 		4D32963A239881C500FC0DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D329639239881C500FC0DC0 /* Assets.xcassets */; };
 		4D32963D239881C500FC0DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D32963B239881C500FC0DC0 /* LaunchScreen.storyboard */; };
-		4D5C9FDA23A4C5B1002C8C7C /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4D5C9FD923A4C5B1002C8C7C /* bunny.obj */; };
 		4D6C76AE23A96CD3009B268B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C76AD23A96CD3009B268B /* README.md */; };
 		4DAA144123A76C650021304A /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA144023A76C650021304A /* Examples.swift */; };
+		4DBAA9AF23E4F3C000804B19 /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4DBAA9AE23E4F3C000804B19 /* bunny.obj */; };
 		4DEA81A323A96A4400B6CCB3 /* Toy3D in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEA81A223A96A4400B6CCB3 /* Toy3D */; };
 /* End PBXBuildFile section */
 
@@ -47,9 +47,9 @@
 		4D32963E239881C500FC0DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D329643239881C500FC0DC0 /* metal-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D32964E239881C500FC0DC0 /* metal-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5C9FD923A4C5B1002C8C7C /* bunny.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
 		4D6C76AD23A96CD3009B268B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DAA144023A76C650021304A /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		4DBAA9AE23E4F3C000804B19 /* bunny.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +103,13 @@
 			children = (
 				4D32962D239881C300FC0DC0 /* AppDelegate.swift */,
 				4D329639239881C500FC0DC0 /* Assets.xcassets */,
-				4D5C9FD923A4C5B1002C8C7C /* bunny.obj */,
 				4DAA144023A76C650021304A /* Examples.swift */,
 				4D329632239881C300FC0DC0 /* GameViewController.swift */,
 				4D32963E239881C500FC0DC0 /* Info.plist */,
 				4D32963B239881C500FC0DC0 /* LaunchScreen.storyboard */,
 				4D329636239881C300FC0DC0 /* Main.storyboard */,
 				4D329634239881C300FC0DC0 /* Shaders.metal */,
+				4DBAA9AE23E4F3C000804B19 /* bunny.obj */,
 			);
 			path = "metal-example";
 			sourceTree = "<group>";
@@ -231,8 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5C9FDA23A4C5B1002C8C7C /* bunny.obj in Resources */,
 				4D32963D239881C500FC0DC0 /* LaunchScreen.storyboard in Resources */,
+				4DBAA9AF23E4F3C000804B19 /* bunny.obj in Resources */,
 				4D6C76AE23A96CD3009B268B /* README.md in Resources */,
 				4D32963A239881C500FC0DC0 /* Assets.xcassets in Resources */,
 				4D329638239881C300FC0DC0 /* Main.storyboard in Resources */,
@@ -455,7 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8QGX59NPW;
+				DEVELOPMENT_TEAM = 2U8DTX59Y4;
 				INFOPLIST_FILE = "metal-example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
