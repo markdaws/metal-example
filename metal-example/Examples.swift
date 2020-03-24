@@ -11,6 +11,12 @@ final class Examples {
     self.renderer = renderer
   }
 
+  func createPointCloud() {
+    renderer.scene.root.clearAllChildren()
+
+    
+  }
+
   func createSceneSingleCube(textured: Bool) {
     renderer.scene.root.clearAllChildren()
 

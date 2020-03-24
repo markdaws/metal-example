@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "MagicaVoxel",
+        "repositoryURL": "https://github.com/markdaws/MagicaVoxel",
+        "state": {
+          "branch": null,
+          "revision": "7fc575da31bd30b54eb60060bd2a6bfd159ac55b",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "Toy3D",
         "repositoryURL": "https://github.com/markdaws/Toy3D.git",
         "state": {
           "branch": null,
           "revision": "09fe04a72493f0eb013af1966b697ddc0508154e",
           "version": "1.1.0"
+        }
+      },
+      {
+        "package": "Utils",
+        "repositoryURL": "https://github.com/markdaws/Utils",
+        "state": {
+          "branch": null,
+          "revision": "920c87773566e5ffb478d2370f01c78ae15787af",
+          "version": "1.0.0"
         }
       }
     ]

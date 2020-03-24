@@ -14,27 +14,12 @@
 		4D32963A239881C500FC0DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D329639239881C500FC0DC0 /* Assets.xcassets */; };
 		4D32963D239881C500FC0DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D32963B239881C500FC0DC0 /* LaunchScreen.storyboard */; };
 		4D6C76AE23A96CD3009B268B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C76AD23A96CD3009B268B /* README.md */; };
+		4D7EECC92425C9570026F76A /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7EECC82425C9570026F76A /* Utils */; };
+		4D7EECCC242964100026F76A /* MagicaVoxel in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7EECCB242964100026F76A /* MagicaVoxel */; };
 		4DAA144123A76C650021304A /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA144023A76C650021304A /* Examples.swift */; };
 		4DBAA9AF23E4F3C000804B19 /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4DBAA9AE23E4F3C000804B19 /* bunny.obj */; };
 		4DEA81A323A96A4400B6CCB3 /* Toy3D in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEA81A223A96A4400B6CCB3 /* Toy3D */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4D329644239881C500FC0DC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D329622239881C300FC0DC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D329629239881C300FC0DC0;
-			remoteInfo = "metal-example";
-		};
-		4D32964F239881C500FC0DC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D329622239881C300FC0DC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D329629239881C300FC0DC0;
-			remoteInfo = "metal-example";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D32962A239881C300FC0DC0 /* metal-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,9 +30,8 @@
 		4D329639239881C500FC0DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D32963C239881C500FC0DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D32963E239881C500FC0DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D329643239881C500FC0DC0 /* metal-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D32964E239881C500FC0DC0 /* metal-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6C76AD23A96CD3009B268B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D7EECCD24297C6C0026F76A /* Toy3D */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Toy3D; path = ../Toy3D; sourceTree = "<group>"; };
 		4DAA144023A76C650021304A /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		4DBAA9AE23E4F3C000804B19 /* bunny.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,21 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7EECC92425C9570026F76A /* Utils in Frameworks */,
+				4D7EECCC242964100026F76A /* MagicaVoxel in Frameworks */,
 				4DEA81A323A96A4400B6CCB3 /* Toy3D in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D329640239881C500FC0DC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D32964B239881C500FC0DC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +53,7 @@
 		4D329621239881C300FC0DC0 = {
 			isa = PBXGroup;
 			children = (
+				4D7EECCD24297C6C0026F76A /* Toy3D */,
 				4D6C76AD23A96CD3009B268B /* README.md */,
 				4D32962C239881C300FC0DC0 /* metal-example */,
 				4D32962B239881C300FC0DC0 /* Products */,
@@ -92,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				4D32962A239881C300FC0DC0 /* metal-example.app */,
-				4D329643239881C500FC0DC0 /* metal-exampleTests.xctest */,
-				4D32964E239881C500FC0DC0 /* metal-exampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,46 +110,12 @@
 			name = "metal-example";
 			packageProductDependencies = (
 				4DEA81A223A96A4400B6CCB3 /* Toy3D */,
+				4D7EECC82425C9570026F76A /* Utils */,
+				4D7EECCB242964100026F76A /* MagicaVoxel */,
 			);
 			productName = "metal-example";
 			productReference = 4D32962A239881C300FC0DC0 /* metal-example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4D329642239881C500FC0DC0 /* metal-exampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D32965A239881C500FC0DC0 /* Build configuration list for PBXNativeTarget "metal-exampleTests" */;
-			buildPhases = (
-				4D32963F239881C500FC0DC0 /* Sources */,
-				4D329640239881C500FC0DC0 /* Frameworks */,
-				4D329641239881C500FC0DC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D329645239881C500FC0DC0 /* PBXTargetDependency */,
-			);
-			name = "metal-exampleTests";
-			productName = "metal-exampleTests";
-			productReference = 4D329643239881C500FC0DC0 /* metal-exampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4D32964D239881C500FC0DC0 /* metal-exampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D32965D239881C500FC0DC0 /* Build configuration list for PBXNativeTarget "metal-exampleUITests" */;
-			buildPhases = (
-				4D32964A239881C500FC0DC0 /* Sources */,
-				4D32964B239881C500FC0DC0 /* Frameworks */,
-				4D32964C239881C500FC0DC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D329650239881C500FC0DC0 /* PBXTargetDependency */,
-			);
-			name = "metal-exampleUITests";
-			productName = "metal-exampleUITests";
-			productReference = 4D32964E239881C500FC0DC0 /* metal-exampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,14 +130,6 @@
 					4D329629239881C300FC0DC0 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					4D329642239881C500FC0DC0 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 4D329629239881C300FC0DC0;
-					};
-					4D32964D239881C500FC0DC0 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 4D329629239881C300FC0DC0;
-					};
 				};
 			};
 			buildConfigurationList = 4D329625239881C300FC0DC0 /* Build configuration list for PBXProject "metal-example" */;
@@ -214,14 +143,14 @@
 			mainGroup = 4D329621239881C300FC0DC0;
 			packageReferences = (
 				4DEA81A123A96A4400B6CCB3 /* XCRemoteSwiftPackageReference "Toy3D" */,
+				4D7EECC72425C9570026F76A /* XCRemoteSwiftPackageReference "Utils" */,
+				4D7EECCA242964100026F76A /* XCRemoteSwiftPackageReference "MagicaVoxel" */,
 			);
 			productRefGroup = 4D32962B239881C300FC0DC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4D329629239881C300FC0DC0 /* metal-example */,
-				4D329642239881C500FC0DC0 /* metal-exampleTests */,
-				4D32964D239881C500FC0DC0 /* metal-exampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,20 +168,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D329641239881C500FC0DC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D32964C239881C500FC0DC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,34 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D32963F239881C500FC0DC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D32964A239881C500FC0DC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4D329645239881C500FC0DC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D329629239881C300FC0DC0 /* metal-example */;
-			targetProxy = 4D329644239881C500FC0DC0 /* PBXContainerItemProxy */;
-		};
-		4D329650239881C500FC0DC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D329629239881C300FC0DC0 /* metal-example */;
-			targetProxy = 4D32964F239881C500FC0DC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D329636239881C300FC0DC0 /* Main.storyboard */ = {
@@ -470,90 +358,6 @@
 			};
 			name = Release;
 		};
-		4D32965B239881C500FC0DC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8QGX59NPW;
-				INFOPLIST_FILE = "metal-exampleTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ruanestudios.metal-exampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-example.app/metal-example";
-			};
-			name = Debug;
-		};
-		4D32965C239881C500FC0DC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8QGX59NPW;
-				INFOPLIST_FILE = "metal-exampleTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ruanestudios.metal-exampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-example.app/metal-example";
-			};
-			name = Release;
-		};
-		4D32965E239881C500FC0DC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8QGX59NPW;
-				INFOPLIST_FILE = "metal-exampleUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ruanestudios.metal-exampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "metal-example";
-			};
-			name = Debug;
-		};
-		4D32965F239881C500FC0DC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8QGX59NPW;
-				INFOPLIST_FILE = "metal-exampleUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ruanestudios.metal-exampleUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "metal-example";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,27 +379,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D32965A239881C500FC0DC0 /* Build configuration list for PBXNativeTarget "metal-exampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D32965B239881C500FC0DC0 /* Debug */,
-				4D32965C239881C500FC0DC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D32965D239881C500FC0DC0 /* Build configuration list for PBXNativeTarget "metal-exampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D32965E239881C500FC0DC0 /* Debug */,
-				4D32965F239881C500FC0DC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4D7EECC72425C9570026F76A /* XCRemoteSwiftPackageReference "Utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markdaws/Utils";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4D7EECCA242964100026F76A /* XCRemoteSwiftPackageReference "MagicaVoxel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markdaws/MagicaVoxel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		4DEA81A123A96A4400B6CCB3 /* XCRemoteSwiftPackageReference "Toy3D" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/markdaws/Toy3D.git";
@@ -607,6 +409,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D7EECC82425C9570026F76A /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D7EECC72425C9570026F76A /* XCRemoteSwiftPackageReference "Utils" */;
+			productName = Utils;
+		};
+		4D7EECCB242964100026F76A /* MagicaVoxel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D7EECCA242964100026F76A /* XCRemoteSwiftPackageReference "MagicaVoxel" */;
+			productName = MagicaVoxel;
+		};
 		4DEA81A223A96A4400B6CCB3 /* Toy3D */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4DEA81A123A96A4400B6CCB3 /* XCRemoteSwiftPackageReference "Toy3D" */;
