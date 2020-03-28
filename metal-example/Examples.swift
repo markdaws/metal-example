@@ -13,8 +13,6 @@ final class Examples {
 
   func createPointCloud() {
     renderer.scene.root.clearAllChildren()
-
-    
   }
 
   func createSceneSingleCube(textured: Bool) {
@@ -57,7 +55,7 @@ final class Examples {
       texture = Texture(mtlTexture: metalTexture, samplerState: sampler)
     }
 
-    let material = Material.createBasic(renderer: renderer, texture: texture)
+    let material = Material.createBasic(renderer: renderer, texture0: texture)
 
 
     cubeMesh.material = material
@@ -94,7 +92,7 @@ final class Examples {
       return
     }
 
-    let material = Material.createBasic(renderer: renderer, texture: nil)
+    let material = Material.createBasic(renderer: renderer, texture0: nil)
     cubeMesh.material = material
 
     let containerNode = Node()
@@ -197,7 +195,8 @@ final class Examples {
       vertexName: "basic_vertex",
       fragmentName: "texture_fragment",
       vertexDescriptor: metalVertexDescriptor,
-      texture: bunnyTexture
+      texture0: bunnyTexture,
+      texture1: nil
     )
 
     let bunnyMesh = Mesh(mtkMesh: meshes[0])

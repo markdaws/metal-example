@@ -31,7 +31,6 @@
 		4D32963C239881C500FC0DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D32963E239881C500FC0DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6C76AD23A96CD3009B268B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4D7EECCD24297C6C0026F76A /* Toy3D */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Toy3D; path = ../Toy3D; sourceTree = "<group>"; };
 		4DAA144023A76C650021304A /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		4DBAA9AE23E4F3C000804B19 /* bunny.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +52,6 @@
 		4D329621239881C300FC0DC0 = {
 			isa = PBXGroup;
 			children = (
-				4D7EECCD24297C6C0026F76A /* Toy3D */,
 				4D6C76AD23A96CD3009B268B /* README.md */,
 				4D32962C239881C300FC0DC0 /* metal-example */,
 				4D32962B239881C300FC0DC0 /* Products */,

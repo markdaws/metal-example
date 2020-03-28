@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/markdaws/Toy3D.git",
         "state": {
           "branch": null,
-          "revision": "09fe04a72493f0eb013af1966b697ddc0508154e",
-          "version": "1.1.0"
+          "revision": "e0a642ef6230f2897637130bd1ed9969d0f56272",
+          "version": "1.3.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/markdaws/Utils",
         "state": {
           "branch": null,
-          "revision": "920c87773566e5ffb478d2370f01c78ae15787af",
-          "version": "1.0.0"
+          "revision": "0b35ac9c769ae5beecd985a7ea6edc8b5589e4a2",
+          "version": "1.1.0"
         }
       }
     ]

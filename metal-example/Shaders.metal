@@ -35,6 +35,7 @@ struct Uniforms {
 
 struct ModelConstants {
   float4x4 modelMatrix;
+  float4x4 inverseModelMatrix;
 };
 
 vertex VertexOut basic_vertex(
