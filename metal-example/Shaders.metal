@@ -53,14 +53,14 @@ vertex VertexOut basic_vertex(
 
 fragment FragmentOut color_fragment(VertexOut interpolated [[stage_in]],
                               float2 pointCoord [[point_coord]]) {
-  float dist = length(pointCoord - float2(0.5));
+  //float dist = length(pointCoord - float2(0.5));
 
   FragmentOut out;
-  if (dist > 0.5) {
-    out.color0 = float4(1.0, 0.0, 0.0, 1.0);
-  } else {
+  //if (dist > 0.5) {
+  //  out.color0 = float4(1.0, 0.0, 0.0, 1.0);
+  //} else {
     out.color0 = interpolated.color;
-  }
+  //}
   return out;
 }
 

@@ -6,9 +6,25 @@ import UIKit
 
 final class Examples {
   private let renderer: Renderer
+  private var videoTexture: Texture?
+  private var videoTextureSource: VideoTextureSource?
 
   init(renderer: Renderer) {
     self.renderer = renderer
+  }
+
+  func onRendererFrame() {
+    // With a video texture, every frame we try to extract the new frame then apply
+    // the new frame to the Texture instace
+    guard let videoTextureSource = self.videoTextureSource else {
+      return
+    }
+
+    guard let texture = videoTextureSource.createTexture(hostTime: nil) else {
+      return
+    }
+
+    videoTexture?.mtlTexture = texture
   }
 
   func createPointCloud() {
@@ -57,6 +73,57 @@ final class Examples {
 
     let material = Material.createBasic(renderer: renderer, texture0: texture)
 
+    cubeMesh.material = material
+    let node = Node(mesh: cubeMesh)
+    node.update = { (time: Time, node: Node) in
+      node.orientation *= Quaternion(
+        angle: Math.toRadians(30.0) * Float(time.updateTime),
+        axis: [0.5, 1, -1]
+      )
+    }
+    renderer.scene.root.addChild(node)
+  }
+
+  func createSceneVideoTextureCube() {
+    renderer.scene.root.clearAllChildren()
+
+    let dimension: Float = 3.0
+
+    // Define the 3D vertices and colors for the vertices
+    guard let cubeMesh = Primitives.cuboid(
+      renderer: renderer,
+      width: dimension,
+      height: dimension,
+      length: dimension
+    ) else {
+      print("Failed to create the cuboid mesh")
+      return
+    }
+
+    if videoTextureSource == nil {
+      videoTextureSource = VideoTextureSource(
+        renderer: renderer,
+        videoUrl: Bundle.main.url(forResource: "cubes", withExtension: "mov")!)
+      videoTextureSource?.play(repeat: true)
+    }
+
+    // We just default to the brick texture until the video source is ready
+    guard let metalTexture = Texture.loadMetalTexture(device: renderer.device, named: "bricks") else {
+      return
+    }
+
+    let samplerDescriptor = MTLSamplerDescriptor()
+    samplerDescriptor.normalizedCoordinates = true
+    samplerDescriptor.minFilter = .linear
+    samplerDescriptor.magFilter = .linear
+    samplerDescriptor.mipFilter = .linear
+    guard let sampler = renderer.device.makeSamplerState(descriptor: samplerDescriptor) else {
+      return
+    }
+
+    videoTexture = Texture(mtlTexture: metalTexture, samplerState: sampler)
+
+    let material = Material.createBasic(renderer: renderer, texture0: videoTexture)
 
     cubeMesh.material = material
     let node = Node(mesh: cubeMesh)

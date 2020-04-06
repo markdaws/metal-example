@@ -8,6 +8,7 @@ final class GameViewController: UIViewController {
   private enum Demo {
     case singleCube
     case singleCubeTextured
+    case singleCubeVideo
     case multipleCubesFew
     case multipleCubesMany
     case bunny
@@ -36,6 +37,8 @@ final class GameViewController: UIViewController {
     let scale = UIScreen.main.scale
 
     self.renderer.onFrame = { [unowned renderer] in
+      self.examples.onRendererFrame()
+      
       let size = mtkView.bounds.size
       self.fpsLabel.text = "[\(size.width * scale) x \(size.height * scale)], FPS: \(String(format: "%.0f", renderer.fpsCounter.currentFPS))"
     }
@@ -61,6 +64,11 @@ final class GameViewController: UIViewController {
       currentDemoType = .singleCubeTextured
 
     case .singleCubeTextured:
+      renderer.scene.camera.origin = [0, 0, 7]
+      examples.createSceneVideoTextureCube()
+      currentDemoType = .singleCubeVideo
+
+    case .singleCubeVideo:
       renderer.scene.camera.origin = [0, 0, 7]
       examples.createSceneMultipleCubes(cubeDimension: 1.0, cubeCount: 100)
       currentDemoType = .multipleCubesFew

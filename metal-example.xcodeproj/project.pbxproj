@@ -16,6 +16,7 @@
 		4D6C76AE23A96CD3009B268B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D6C76AD23A96CD3009B268B /* README.md */; };
 		4D7EECC92425C9570026F76A /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7EECC82425C9570026F76A /* Utils */; };
 		4D7EECCC242964100026F76A /* MagicaVoxel in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7EECCB242964100026F76A /* MagicaVoxel */; };
+		4DA7BFE3243BD78800EFADC2 /* cubes.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4DA7BFE2243BD78800EFADC2 /* cubes.mov */; };
 		4DAA144123A76C650021304A /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA144023A76C650021304A /* Examples.swift */; };
 		4DBAA9AF23E4F3C000804B19 /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4DBAA9AE23E4F3C000804B19 /* bunny.obj */; };
 		4DEA81A323A96A4400B6CCB3 /* Toy3D in Frameworks */ = {isa = PBXBuildFile; productRef = 4DEA81A223A96A4400B6CCB3 /* Toy3D */; };
@@ -31,6 +32,7 @@
 		4D32963C239881C500FC0DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D32963E239881C500FC0DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6C76AD23A96CD3009B268B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4DA7BFE2243BD78800EFADC2 /* cubes.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cubes.mov; sourceTree = "<group>"; };
 		4DAA144023A76C650021304A /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		4DBAA9AE23E4F3C000804B19 /* bunny.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 		4D32962C239881C300FC0DC0 /* metal-example */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7BFE2243BD78800EFADC2 /* cubes.mov */,
 				4D32962D239881C300FC0DC0 /* AppDelegate.swift */,
 				4D329639239881C500FC0DC0 /* Assets.xcassets */,
 				4DAA144023A76C650021304A /* Examples.swift */,
@@ -161,6 +164,7 @@
 				4D32963D239881C500FC0DC0 /* LaunchScreen.storyboard in Resources */,
 				4DBAA9AF23E4F3C000804B19 /* bunny.obj in Resources */,
 				4D6C76AE23A96CD3009B268B /* README.md in Resources */,
+				4DA7BFE3243BD78800EFADC2 /* cubes.mov in Resources */,
 				4D32963A239881C500FC0DC0 /* Assets.xcassets in Resources */,
 				4D329638239881C300FC0DC0 /* Main.storyboard in Resources */,
 			);
